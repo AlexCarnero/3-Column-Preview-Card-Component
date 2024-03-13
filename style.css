@@ -1,0 +1,122 @@
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    --font-heading: "Big Shoulders Display", sans-serif;
+    --font-paragraph: "Lexend Deca", sans-serif;
+    --font-size-paragraph: 15px;
+}
+
+*{
+    box-sizing: border-box;
+    margin-left: 0px;
+    margin-right: 0px;
+
+}
+
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center;
+    display: inline-block;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.cards{
+    display: flex;
+    width: 940px;
+    height:500px;
+    margin:209.5px auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card{
+    display: inline-block;
+    padding:45px 3.3em;
+}
+
+.card__title{
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    color: var(--Very-light-gray);
+}
+
+.card__paragraph{
+    font-family: var(--font-paragraph);
+    font-size: var(--font-size-paragraph);
+    color: var(--Transparent-white);
+    line-height: 25px;
+}
+
+.card--bright-orange{
+    background-color: var(--Bright-orange);
+}
+
+.card-dark-cyan{
+    background-color: var(--Dark-cyan);
+}
+
+.card-very-dark-cyan{
+    background-color: var(--Very-dark-cyan);
+}
+
+.card__button{
+    display: inline-block;
+    margin-top: 2em;
+    padding:15px 30px;
+    border-radius: 30px;
+    border: 2px solid var(--Very-light-gray);
+    background-color: var(--Very-light-gray);
+    text-decoration: none;
+    font-family: var(--font-paragraph);
+}
+
+.card__button--orange{
+    color:var(--Bright-orange)
+}
+
+
+.card__button--orange:hover{
+    color:var(--Very-light-gray);
+    background-color:var(--Bright-orange);
+}
+
+.card__button--dark-cyan{
+    color:var(--Dark-cyan)
+}
+
+.card__button--dark-cyan:hover{
+    color:var(--Very-light-gray);
+    background-color:var(--Dark-cyan);
+}
+
+.card__button--very-dark-cyan{
+    color:var(--Very-dark-cyan)
+}
+
+.card__button--very-dark-cyan:hover{
+    color:var(--Very-light-gray);
+    background-color:var(--Very-dark-cyan);
+}
+
+@media screen and (max-width:920px) {
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        height: 100%;
+        margin: 50px 25px;
+    }
+
+    .card{
+        padding:45px 3em;
+    }
+
+    .card__button{
+        margin-top: 1em;
+    }
+}
